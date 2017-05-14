@@ -1,6 +1,10 @@
 var express = require("express");
 var app = express();
 
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+})
+
 app.get('/:time', function (req, res) {
   var param = req.params.time;
   var unix;
