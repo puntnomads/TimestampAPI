@@ -2,10 +2,12 @@ var express = require("express");
 var path = require('path');
 var app = express();
 
+app.set('view engine', 'ejs');
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
-  res.sendFile('Public/index.html', { root: __dirname});
+  res.sendFile('index');
 })
 
 app.get('/:time', function (req, res) {

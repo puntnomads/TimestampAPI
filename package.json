@@ -9,10 +9,7 @@
   "author": "Camper",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^2.5.6",
     "express": "^4.15.2"
-  },
-  "engines": {
-    "node": "v8.0.0",
-    "npm": "5.0.0"
   }
 }
